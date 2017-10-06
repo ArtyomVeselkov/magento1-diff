@@ -1,0 +1,19 @@
+Index: app/code/core/Mage/Core/Model/Config.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/code/core/Mage/Core/Model/Config.php	(revision 3404ea2c785cc5fded28f90a3ddae5b88b531b4f)
++++ app/code/core/Mage/Core/Model/Config.php	(revision )
+@@ -1514,7 +1514,10 @@
+     public function getEventConfig($area, $eventName)
+     {
+         //return $this->getNode($area)->events->{$eventName};
+-        if (!isset($this->_eventAreas[$area])) {
++        // MAGENTO1-DIFF PATCH :: START
++        // if (!isset($this->_eventAreas[$area])) {
++        if (empty($this->_eventAreas[$area])) {
++        // MAGENTO1-DIFF PATCH :: END
+             $this->_eventAreas[$area] = $this->getNode($area)->events;
+         }
+         return $this->_eventAreas[$area]->{$eventName};
