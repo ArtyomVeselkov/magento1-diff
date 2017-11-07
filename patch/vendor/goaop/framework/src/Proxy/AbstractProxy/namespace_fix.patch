@@ -1,8 +1,8 @@
-Index: vendor/goaop/framework/src/Proxy/AbstractProxy.php
+Index: src/Proxy/AbstractProxy.php
 <+>UTF-8
 ===================================================================
---- vendor/goaop/framework/src/Proxy/AbstractProxy.php
-+++ vendor/goaop/framework/src/Proxy/AbstractProxy.php
+--- src/Proxy/AbstractProxy.php
++++ src/Proxy/AbstractProxy.php
 @@ -107,7 +107,7 @@
              $reflectionType = $parameter->getType();
              if ($reflectionType) {
