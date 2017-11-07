@@ -1,0 +1,17 @@
+Index: app/code/core/Mage/GoogleCheckout/etc/config.xml
+<+>UTF-8
+===================================================================
+--- app/code/core/Mage/GoogleCheckout/etc/config.xml
++++ app/code/core/Mage/GoogleCheckout/etc/config.xml
+@@ -32,6 +32,11 @@
+         </Mage_GoogleCheckout>
+     </modules>
+     <global>
++        <helpers>
++            <googlecheckout>
++                <class>Mage_GoogleCheckout_Helper</class>
++            </googlecheckout>
++        </helpers>
+         <models>
+             <googlecheckout>
+                 <class>Mage_GoogleCheckout_Model</class>
