@@ -1,0 +1,11 @@
+--- js/mage/adminhtml/form.js
++++ js/mage/adminhtml/form.js
+@@ -522,7 +522,7 @@
+             }
+         }
+         return result;
+-    }
++    },
+ 
+     /**
+      * Define whether target element should be toggled and show/hide its row
